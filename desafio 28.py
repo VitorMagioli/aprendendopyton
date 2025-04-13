@@ -1,17 +1,21 @@
-print('      Jogo de Advinhação     ')
-print('   Tente descobrir qual número o computador pensou entre 0 e 5.')
+from random import randint
+from time import sleep
+computador = randint(0, 5) #faz o computador "pensar"
+print('      Jogo de Adivinhação     ')
+print('-=-'*20)
+print('Vou pensar em um número entre 0 e 5. Tente adivinhar!')
+print('-=-'*20)
 
-num = int(input('Digite o número que você acha que é: '))
+num = int(input('Digite o número que você acha que é: ')) #jogador tenta adivinhar
 
-if num == 0:
-    print('Você errou! Tente novamente')
-if num == 1:
-    print('Você errou! Tente novamente')
-if num == 2:
-    print('Você errou! Tente novamente')
-if num == 3:
+print ('PROCESSANDO...')
+sleep(3)
+
+if num == computador:
+    print('Eu pensei em... {}'.format(computador))
+    sleep(1)
     print('Você acertou! PARABÉNS!!!!!')
-if num == 4:
-    print('Você errou! Tente novamente')
-if num == 5:
+else:
+    print('Eu pensei em... {}'.format(computador))
+    sleep(1)
     print('Você errou! Tente novamente')
