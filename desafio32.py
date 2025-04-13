@@ -3,6 +3,6 @@ print('           Descobrindo Ano Bissexto           ')
 ano = int(input('Digite o ano: '))
 
 if ano % 4 == 0:
-    print('O ano é bissexto!')
+    print('{} é bissexto!'.format(ano))
 else:
-    print('O ano não é bissexto!')
+    print('{} não é bissexto!'.format(ano))
