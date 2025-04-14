@@ -8,8 +8,8 @@ print('Escolha entre PEDRA, PAPEL e TESOURA e tente ganhar de mim!')
 
 print('''
 [1] PEDRA
-[2] PAPEL
-[3] TESOURA ''')
+[2] TESOURA
+[3] PAPEL ''')
 
 escolha = int(input('Selecione para Jogar: '))
 
