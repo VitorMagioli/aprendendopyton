@@ -12,5 +12,11 @@ if escolha == 1:
     num = int(input('Digite o valor que você deseja converter: '))
     resto = 0
     resto += num % 2
-    if ()
-    print('')
+
+elif escolha == 2:
+    num = int(input('Digite o valor que deseja converter: '))
+    resto = 0
+    resto += num % 8
+else:
+    num = int(input('Digite o valor que deseja converter: '))
+    
