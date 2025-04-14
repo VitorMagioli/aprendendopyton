@@ -51,6 +51,6 @@ elif computador == 1 and escolha == 3:
     sleep(1)
     print('[PAPEL] Você perdeu! PAPEL vence PEDRA. Computador venceu!!!\n')
 else:
-    print('Escolha uma das opções acima.')
+    print('[OPÇÃO INVÁLIDA!] Escolha uma das opções acima.')
 
 print('Obrigado por Jogar!')
