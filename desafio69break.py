@@ -17,7 +17,7 @@ while True:
         if idade < 20:
             m += 1
     opcao =' '
-    while opcao not in 'SN':
+    while opcao not in 'SN': #validacao da verificacao de saída
         opcao = str(input('Deseja continuar cadastrando? [S/N]: ')).upper().strip()[0]
 
     if opcao == 'N':
