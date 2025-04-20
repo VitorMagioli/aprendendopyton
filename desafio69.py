@@ -1,9 +1,9 @@
 print('-=-'*10)
 print('           CADASTRO')
 print('-=-'*10)
-
+opcao = 'S'
 i = h = m = 0
-while True:
+while opcao not in 'N':
     idade = int(input('Idade: '))
     sexo = ' '
     while sexo not in 'MmFf':
@@ -16,12 +16,8 @@ while True:
     elif sexo == 'F':
         if idade < 20:
             m += 1
-    opcao =' '
-    while opcao not in 'SN':
-        opcao = str(input('Deseja continuar cadastrando? [S/N]: ')).upper().strip()[0]
-
-    if opcao == 'N':
-        break
+    
+    opcao = str(input('Deseja continuar cadastrando? [S/N]: ')).upper().strip()[0]
     print('---'*10)
     
 print(f'{i} pessoas tem mais de 18 anos.')
