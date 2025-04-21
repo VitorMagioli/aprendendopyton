@@ -1,4 +1,7 @@
+print('='*20)
 print('CADASTRO DE PRODUTOS')
+print('='*20)
+
 listagem_Produtos = (str(input('Digite o nome do produto: ')), float(input('Preço: R$ ')), 
                      str(input('Digite o nome do produto: ')), float(input('Preço: R$ ')), 
                      str(input('Digite o nome do produto: ')), float(input('Preço: R$ ')), 
