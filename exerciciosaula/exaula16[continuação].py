@@ -37,3 +37,5 @@ print(d.index(2, 2))
 #tipos de dados diferentes dentro das tuplas
 pessoa = ('Vitor', 28, 'M', 1.79, 76)
 print(pessoa)
+#DELETA a tupla
+del(pessoa) 
