@@ -1,4 +1,4 @@
-def leiaInt(msg):
+def leiaInt(msg, valor = 0):
     ok = False
     valor = 0
     while True:
@@ -7,6 +7,9 @@ def leiaInt(msg):
             n.isnumeric()
             valor = int(n)
             ok = True
+        except KeyboardInterrupt:
+            print('\33[0;31mO usuário preferiu não digitar esse número. \33[m')
+            break
         except:
             print('\33[0;31m[ERRO] Digite um número inteiro válido! \33[m')
         if ok:
@@ -14,7 +17,7 @@ def leiaInt(msg):
     return valor
 
 
-def leiaFloat(msg):
+def leiaFloat(msg, valor = 0):
     ok = False
     valor = 0
     while True:
@@ -23,6 +26,9 @@ def leiaFloat(msg):
             n.isnumeric()
             valor = float(n)
             ok = True
+        except KeyboardInterrupt:
+            print('\33[0;31mO usuário preferiu não digitar esse número. \33[m')
+            break
         except:
             print('\33[0;31m[ERRO] Digite um número REAL válido! \33[m')
         if ok:
