@@ -6,13 +6,12 @@ while True:
 [1] CADASTRAR UMA PESSOA
 [2] VER LISTA DE PESSOAS CADASTRADAS
 [3] SAIR DO PROGRAMA      ''')
+        
         opcao = int(input('Sua opção: '))
-        try:
-            if opcao == 1:
-                print('cadastro')
-            if opcao == 2:
-                print('lista')
-            if opcao == 3:
-                break
-        except:
-            print('[ERRO] Digite uma opção válida')
+        if opcao == 1:
+            print('Chamando função cadastroPessoa...')
+            funcoes.cadastroPessoa()
+        if opcao == 2:
+            print('lista')
+        if opcao == 3:
+            break
